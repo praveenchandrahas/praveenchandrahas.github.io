@@ -149,3 +149,4 @@ footer { border-top: 1px solid var(--rule); padding: 1.75rem 0 3rem; font-family
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem;
 }
 @media (prefers-color-scheme: dark) { .article figure { background: #000; } }
+.article .written { margin-top: 2rem; font-family: var(--sans); font-size: .82rem; font-style: italic; color: var(--muted); }
