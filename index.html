@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praveen Chandrahas</title>
+<meta name="description" content="Notes on work, research and interests. Hyderabad.">
+<style>
+  :root {
+    --bg: #f8f6f1;
+    --bg-soft: #f1eee6;
+    --card: #fcfbf8;
+    --fg: #22211e;
+    --muted: #77746b;
+    --rule: #dedacd;
+    --accent: #9a4a22;
+    --link: #2b4a6f;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141418;
+      --bg-soft: #1a1a1f;
+      --card: #191920;
+      --fg: #e8e5dc;
+      --muted: #9a978c;
+      --rule: #2a2a31;
+      --accent: #e0a77c;
+      --link: #94b4d8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: var(--serif); line-height: 1.7; -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent); color: var(--bg); }
+  a { color: var(--link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--link) 35%, transparent); text-underline-offset: 3px; transition: color .15s, text-decoration-color .15s; }
+  a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+  /* top bar */
+  .bar {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .bar-in {
+    max-width: 64rem; margin: 0 auto; padding: .8rem 1.5rem;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  }
+  .brand { font-size: 1rem; font-weight: 600; color: var(--fg); text-decoration: none; letter-spacing: -.005em; }
+  nav { display: flex; gap: 1.4rem; font-family: var(--sans); font-size: .8rem; flex-wrap: wrap; }
+  nav a { color: var(--muted); text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; }
+  nav a:hover, nav a.on { color: var(--fg); border-bottom-color: var(--accent); }
+
+  .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* hero */
+  .hero { position: relative; padding: 5.5rem 0 4rem; overflow: hidden; }
+  .motif {
+    position: absolute; right: -2rem; top: 0; width: min(44rem, 95%); height: 100%;
+    color: var(--accent); opacity: .15; pointer-events: none;
+  }
+  .hero-in { position: relative; max-width: 44rem; }
+  .eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 1.25rem; }
+  .eyebrow b { color: var(--accent); font-weight: 500; }
+  h1 { font-size: clamp(2.2rem, 5.5vw, 3.4rem); font-weight: 500; letter-spacing: -.02em; line-height: 1.1; margin: 0 0 1.5rem; }
+  .lede { font-size: 1.3rem; line-height: 1.55; margin: 0 0 1.25rem; max-width: 36rem; }
+  .hero p.body { max-width: 36rem; margin: .75rem 0; }
+
+  /* sections */
+  section { padding: 3.25rem 0; border-top: 1px solid var(--rule); }
+  .label {
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 1.5rem; display: flex; align-items: center; gap: .75rem;
+  }
+  .label b { color: var(--accent); font-weight: 500; }
+  .label::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+  .intro { max-width: 40rem; margin: 0 0 1.75rem; }
+
+  .grid { display: grid; gap: 1.25rem; }
+  .g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 6px;
+    padding: 1.4rem 1.5rem 1.5rem; transition: border-color .2s, transform .2s;
+  }
+  .card:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--rule)); }
+  .card h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .15rem; line-height: 1.35; }
+  .card p { margin: .5rem 0 0; font-size: .95rem; line-height: 1.62; }
+  .tag { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 0 0 .6rem; }
+  .card .more { font-family: var(--sans); font-size: .8rem; margin-top: .9rem; display: inline-block; }
+
+  .question {
+    margin: 0 0 1.5rem; padding: 1.5rem 1.75rem;
+    background: var(--bg-soft); border-left: 2px solid var(--accent);
+    font-style: italic; font-size: 1.2rem; line-height: 1.55;
+  }
+  .note { color: var(--muted); font-size: .92rem; margin: 1.5rem 0 0; max-width: 40rem; }
+
+  footer { border-top: 1px solid var(--rule); padding: 1.75rem 0 3rem; font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-in, section { animation: rise .6s ease both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  }
+  @media (max-width: 820px) {
+    .g3 { grid-template-columns: 1fr; }
+    .g2 { grid-template-columns: 1fr; }
+    .hero { padding: 3.5rem 0 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#top">Praveen Chandrahas</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#tinkering">Tinkering</a>
+      <a href="#elsewhere">Elsewhere</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+
+<div class="hero">
+  <!-- Faint flow-field motif: lines relaxing down a gradient -->
+  <svg class="motif" viewBox="0 0 740 350" preserveAspectRatio="xMaxYMid slice" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+    <path d="M0 40 C 180 10, 300 120, 740 60"/>
+    <path d="M0 70 C 190 40, 310 150, 740 100"/>
+    <path d="M0 100 C 200 70, 320 180, 740 140"/>
+    <path d="M0 130 C 210 100, 330 210, 740 180"/>
+    <path d="M0 160 C 220 130, 340 240, 740 220"/>
+    <path d="M0 190 C 230 160, 350 270, 740 260"/>
+    <path d="M0 220 C 240 190, 360 300, 740 300"/>
+    <path d="M0 250 C 250 220, 370 325, 740 340"/>
+  </svg>
+  <div class="hero-in">
+    <p class="eyebrow"><b>●</b> Hyderabad</p>
+    <h1>Praveen Chandrahas</h1>
+    <p class="lede">I build things, think about how intelligence and energy relate, and tinker with hardware.</p>
+    <p class="body">I have spent most of my working life moving between engineering, running teams, and helping start organisations. Much of that has been in and around the free software movement in Telugu-speaking regions, and in building technology that works in local languages and for working people.</p>
+    <p class="body">I am more at home with systems, electronics and integration than with writing elegant code. I like understanding how a thing actually works, and checking that it does. I live here with my family and a beagle named Max.</p>
+  </div>
+</div>
+
+<section id="work">
+  <p class="label"><b>01</b> Work</p>
+  <p class="intro">Two things occupy most of my working time at the moment, both built with co-founders.</p>
+  <div class="grid g2">
+    <div class="card">
+      <p class="tag">Inference · infrastructure</p>
+      <h3>Making AI inference tractable</h3>
+      <p>Work on making AI inference cheaper and more tractable to run on infrastructure an organisation controls.</p>
+    </div>
+    <div class="card">
+      <p class="tag">Education · skilling</p>
+      <h3>Applied AI skilling</h3>
+      <p>An AI-skilling effort aimed at practitioners and faculty who need to use these tools well, not just read about them.</p>
+    </div>
+  </div>
+  <p class="note">Before these, I co-founded an enterprise AI company in 2021 and have since left it.</p>
+</section>
+
+<section id="research">
+  <p class="label"><b>02</b> Research</p>
+  <p class="intro">On the side, and out of curiosity, I work on one question about entropy, life and agency:</p>
+  <div class="question">Can something that behaves like an agent arise from nothing more than an energy gradient, with persistence as the only selection pressure?</div>
+  <div class="grid g2">
+    <div class="card">
+      <p class="tag">Paper · speculative</p>
+      <h3>Why AGI is a thermodynamic problem</h3>
+      <p>An argument that the limits on intelligence may be better framed in terms of sustained entropy production than in terms of algorithms alone. It is an argument, not a result, and I treat it that way.</p>
+    </div>
+    <div class="card">
+      <p class="tag">Code · preregistered</p>
+      <h3>agency-from-gradients</h3>
+      <p>A public simulation suite for testing the question above. The hypotheses were written down before the runs, so that negative results count as much as positive ones.</p>
+      <a class="more" href="https://github.com/praveenchandrahas/agency-from-gradients">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<section id="tinkering">
+  <p class="label"><b>03</b> Tinkering</p>
+  <p class="intro">These are hobbies. I do them for the satisfaction of understanding each part, not to chase a particular outcome.</p>
+  <div class="grid g3">
+    <div class="card">
+      <p class="tag">Audio · DSP</p>
+      <h3>A software-defined home theater</h3>
+      <p>Building the audio pipeline stage by stage and measuring each one. The interest is in verifying what each component does, not in audiophile claims.</p>
+      <a class="more" href="https://github.com/praveenchandrahas/SDHT">Code and notes →</a>
+    </div>
+    <div class="card">
+      <p class="tag">Optics · sky</p>
+      <h3>A DIY planetarium and a smart telescope</h3>
+      <p>Partly for myself and partly to share the night sky with family.</p>
+    </div>
+    <div class="card">
+      <p class="tag">Outdoors</p>
+      <h3>Dark-sky trips</h3>
+      <p>The Western Ghats and the forests of Telangana are my favourite places to go and look up.</p>
+    </div>
+  </div>
+</section>
+
+<section id="elsewhere">
+  <p class="label"><b>04</b> Elsewhere</p>
+  <p><a href="https://github.com/praveenchandrahas">GitHub</a></p>
+  <!-- Add LinkedIn / email / blog here if you want them public -->
+</section>
+
+<footer>
+  <span>Praveen Chandrahas</span>
+  <span>Last updated November 2026</span>
+</footer>
+
+</div>
+
+<script>
+  // Highlight the nav link for the section in view.
+  (function () {
+    var links = document.querySelectorAll('nav a');
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (l) { l.classList.toggle('on', l.getAttribute('href') === '#' + e.target.id); });
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    document.querySelectorAll('section').forEach(function (s) { io.observe(s); });
+  })();
+</script>
+</body>
+</html>
