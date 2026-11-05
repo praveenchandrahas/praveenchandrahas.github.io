@@ -159,3 +159,5 @@ h2.label { font-weight: 400; line-height: inherit; }
   font-family: var(--sans); font-size: .85rem; text-decoration: none;
 }
 .skip:focus { top: .75rem; color: var(--bg); }
+.card .links { margin: .9rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; }
+.card .links .more { margin-top: 0; }
