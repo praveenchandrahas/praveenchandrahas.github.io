@@ -3,7 +3,7 @@
   --bg-soft: #f1eee6;
   --card: #fcfbf8;
   --fg: #22211e;
-  --muted: #77746b;
+  --muted: #66635b;
   --rule: #dedacd;
   --accent: #9a4a22;
   --link: #2b4a6f;
@@ -150,3 +150,12 @@ footer { border-top: 1px solid var(--rule); padding: 1.75rem 0 3rem; font-family
 }
 @media (prefers-color-scheme: dark) { .article figure { background: #000; } }
 .article .written { margin-top: 2rem; font-family: var(--sans); font-size: .82rem; font-style: italic; color: var(--muted); }
+
+/* ---- accessibility ---- */
+h2.label { font-weight: 400; line-height: inherit; }
+.skip {
+  position: absolute; left: 1rem; top: -4rem; z-index: 20;
+  background: var(--fg); color: var(--bg); padding: .55rem .9rem; border-radius: 4px;
+  font-family: var(--sans); font-size: .85rem; text-decoration: none;
+}
+.skip:focus { top: .75rem; color: var(--bg); }
