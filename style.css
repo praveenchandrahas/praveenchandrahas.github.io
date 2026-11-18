@@ -311,3 +311,16 @@ h2.label { font-size:.82rem; font-weight:600; }
   .project-card { grid-template-columns: 1fr; }
   .project-mark { height: 100px; min-height: 100px; }
 }
+
+
+/* Musings listing */
+.musings-card { margin: 0 0 1rem; max-width: 58rem; }
+.musings-card h3 { font-size: 1.25rem; line-height: 1.3; }
+.musings-card p:not(.tag) { max-width: 52rem; }
+.article .lede { font-size: 1.15rem; line-height: 1.6; color: var(--muted); margin: 0 0 2rem; }
+.article h2 { font-size: 1.45rem; line-height: 1.25; margin: 2.5rem 0 .75rem; }
+.article h3 { font-size: 1.1rem; margin: 1.5rem 0 .5rem; }
+.article blockquote { border-left: 2px solid var(--accent); margin: 1.5rem 0; padding: .9rem 1.2rem; background: var(--bg-soft); }
+.article table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: .8rem; }
+.article th, .article td { text-align: left; padding: .65rem .75rem; border-bottom: 1px solid var(--rule); }
+.article th { color: var(--accent); font-weight: 600; }
