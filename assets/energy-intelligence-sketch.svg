@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+<title id="title">Energy, life and intelligence</title>
+<desc id="desc">A hand-drawn ink illustration showing sunlight reaching Earth, energy flowing through simple living forms, and the emergence of a brain-like mind.</desc>
+<rect width="900" height="620" fill="#fff"/>
+<g fill="#111" font-family="Georgia,serif" text-anchor="middle">
+ <text x="450" y="72" font-size="42" font-weight="bold">energy, life &amp; intelligence</text>
+ <path d="M190 88 Q330 96 450 88 T710 89" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"/>
+ <text x="450" y="122" font-size="18">could the search for energy help explain the rise of intelligence?</text>
+</g>
+<g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+ <!-- sun -->
+ <circle cx="125" cy="310" r="57" stroke-width="3"/>
+ <circle cx="125" cy="310" r="49" stroke-width="1.5"/>
+ <path d="M125 229l-4-25m4 187 3 25M44 310l-25-2m187 2 25 1M68 253l-18-18m149 149 18 18m-149 0-18 18m149-149 18-18M91 236l-8-21m75 190 8 21m-75-190-21-8m119 75 21 8" stroke-width="2.2"/>
+ <!-- earth -->
+ <path d="M347 269q13-45 64-48 51 1 72 42 24 47-5 91-24 39-73 38-49-1-67-39-18-39 9-84z" stroke-width="3"/>
+ <path d="M370 260q20-18 34-7l-5 18-18 10-11-7m52-48 12 13-7 18-17-2-8-13m45 54 18 4 6 18-15 12-18-11-4-17m-72 24 17-9 18 12-3 23-18 7-16-14" stroke-width="1.8"/>
+ <path d="M331 291q-12 18-8 39m157-71q17 22 13 44m-124 74q28 19 60 15" stroke-width="1.4" stroke-dasharray="3 7"/>
+ <!-- energy arrows -->
+ <path d="M203 294q45-24 89-9m-9-11 11 11-13 6M205 326q43 7 84 1m-12-9 13 9-14 5" stroke-width="2.5"/>
+ <path d="M493 291q34-20 61-8m-11-10 12 10-13 7M495 337q30 12 61 3m-13-8 14 8-14 6" stroke-width="2.5"/>
+ <!-- microbes -->
+ <ellipse cx="594" cy="292" rx="19" ry="30" transform="rotate(24 594 292)" stroke-width="2.7"/>
+ <path d="M582 278q13-8 22 2m-20 21q12 8 20-3m-24-20-12-12m42 48 11 10m-37-51-2-16m24 54 6 15" stroke-width="1.7"/>
+ <ellipse cx="649" cy="334" rx="14" ry="23" transform="rotate(-35 649 334)" stroke-width="2.5"/>
+ <path d="M640 322l17 19m-19-5 15-9m-23-12-8-8m42 52 9 7" stroke-width="1.5"/>
+ <!-- plant -->
+ <path d="M706 365q-4-35 2-66m-1 30q-32-5-37-31 27-5 37 31m1-12q7-31 31-35 3 28-31 35m-1 48h-22m22 0h23" stroke-width="2.5"/>
+ <!-- animal -->
+ <path d="M757 346q14-27 43-22l22 14 18-3 11 10-8 12-22-1-12 18-7-1 2-19-22-1-13 18-7-1 5-24-14 7z" stroke-width="2.5"/>
+ <path d="M784 324l-3-13 13 10m33 18 8-9m-4 1 7 2" stroke-width="1.7"/>
+ <!-- brain/head -->
+ <path d="M827 275q-8-28 15-42 26-17 48 2 23 20 11 43l-3 24q-1 16-18 23l-2 24-20 1-1-29q-22-8-27-27z" stroke-width="2.8"/>
+ <path d="M840 262q-5-16 10-20 12-4 17 8 13-10 21 2 8 11-3 20 8 12-5 18-12 5-20-5-12 9-21-1-9-10 1-22z" stroke-width="1.9"/>
+ <path d="M848 257q8 4 3 13m17-19q-8 8 1 15m14-2q-10 3-8 13m-27 9q9-6 15 2m8 9q-2-8 7-10" stroke-width="1.5"/>
+ <!-- captions and flow -->
+ <path d="M556 424q125 27 250 0" stroke-width="1.5" stroke-dasharray="2 8"/>
+ <path d="M562 440q-8 17 0 31m0-31 7 9m-7-9-7 9M670 440q-8 17 0 31m0-31 7 9m-7-9-7 9M811 440q-8 17 0 31m0-31 7 9m-7-9-7 9" stroke-width="1.6"/>
+</g>
+<g fill="#111" font-family="Georgia,serif" font-size="18" text-anchor="middle">
+ <text x="125" y="414">sunlight</text><text x="410" y="414">planet</text>
+ <text x="615" y="492">living systems</text><text x="846" y="492">mind</text>
+ <text x="450" y="565" font-size="16">a possible thread: energy flows → organisation → agency</text>
+</g>
+</svg>
