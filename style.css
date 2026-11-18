@@ -332,3 +332,27 @@ h2.label { font-size:.82rem; font-weight:600; }
 .article .article-illustration { margin:0 0 2.25rem; border:1px solid var(--rule); border-radius:3px; overflow:hidden; background:#fff; }
 .article .article-illustration img { display:block; width:100%; height:auto; }
 .article .article-illustration figcaption { padding:.65rem .9rem; font: .72rem/1.5 var(--sans); color:#666; border-top:1px solid #eee; }
+
+
+/* Embedded research preprint */
+.preprint-viewer {
+  margin-top: 1.4rem;
+  overflow: hidden;
+  border: 1px solid var(--line, #dedbd4);
+  border-radius: 8px;
+  background: #fff;
+}
+.preprint-embed {
+  display: block;
+  width: 100%;
+  height: min(78vh, 900px);
+  min-height: 560px;
+  border: 0;
+  background: #fff;
+}
+@media (max-width: 640px) {
+  .preprint-embed {
+    height: 70vh;
+    min-height: 420px;
+  }
+}
