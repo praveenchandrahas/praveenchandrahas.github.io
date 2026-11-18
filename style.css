@@ -213,3 +213,49 @@ h2.label { font-weight: 400; line-height: inherit; }
  .project-content,.feature-project-body { padding:1.1rem; }
  .feature-visual { padding:.5rem .5rem .2rem; }
 }
+
+
+/* ---- quieter, more personal presentation ---- */
+.hero-new .motif { opacity:.15; }
+.tag { color:var(--muted); letter-spacing:.075em; }
+.question {
+  background:transparent;
+  border-left:1px solid var(--rule);
+  padding:1rem 1.25rem;
+  font-style:normal;
+  font-size:1.08rem;
+}
+.project-card {
+  border-color:var(--rule);
+  box-shadow:none;
+}
+.project-mark {
+  min-height:150px;
+  opacity:.78;
+}
+.mark-thermo,
+.mark-world {
+  background:var(--bg-soft);
+}
+.mark-thermo span,
+.mark-agency .orbit {
+  opacity:.42;
+}
+.mark-thermo i,
+.mark-agency i {
+  opacity:.7;
+}
+.mark-world span {
+  box-shadow:none;
+  opacity:.65;
+}
+.feature-project {
+  box-shadow:none;
+}
+.feature-visual svg {
+  opacity:.72;
+}
+.feature-project-body h3 { font-size:1.4rem; }
+.card, .project-card, .feature-project, .feature {
+  border-radius:3px;
+}
