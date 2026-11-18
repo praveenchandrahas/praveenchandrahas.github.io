@@ -259,3 +259,8 @@ h2.label { font-weight: 400; line-height: inherit; }
 .card, .project-card, .feature-project, .feature {
   border-radius:3px;
 }
+
+
+/* Clearer section hierarchy */
+.label { font-size:.82rem; font-weight:600; letter-spacing:.11em; }
+h2.label { font-size:.82rem; font-weight:600; }
