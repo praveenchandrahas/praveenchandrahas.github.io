@@ -324,3 +324,11 @@ h2.label { font-size:.82rem; font-weight:600; }
 .article table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: .8rem; }
 .article th, .article td { text-align: left; padding: .65rem .75rem; border-bottom: 1px solid var(--rule); }
 .article th { color: var(--accent); font-weight: 600; }
+
+/* ---- research preprint and illustrated energy/intelligence essay ---- */
+.preprint-card { margin-top:1.2rem; max-width:58rem; }
+.preprint-card h3 { font-size:1.18rem; }
+.preprint-card .project-links { margin-top:.85rem; }
+.article .article-illustration { margin:0 0 2.25rem; border:1px solid var(--rule); border-radius:3px; overflow:hidden; background:#fff; }
+.article .article-illustration img { display:block; width:100%; height:auto; }
+.article .article-illustration figcaption { padding:.65rem .9rem; font: .72rem/1.5 var(--sans); color:#666; border-top:1px solid #eee; }
