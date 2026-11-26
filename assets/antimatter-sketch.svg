@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+<title id="title">Where did the antimatter go?</title>
+<desc id="desc">A hand-drawn ink illustration of a matter region and an antimatter region meeting along a border, where annihilation sends out gamma rays towards a telescope.</desc>
+<rect width="900" height="620" fill="#fff"/>
+<g fill="#111" font-family="Georgia,serif" text-anchor="middle">
+ <text x="450" y="70" font-size="42" font-weight="bold">where did the antimatter go?</text>
+ <path d="M170 87 Q320 95 450 87 T730 89" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round"/>
+ <text x="450" y="115" font-size="18">if both were made equally, is the other half simply somewhere else?</text>
+</g>
+<g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+ <!-- matter region -->
+ <path d="M442 168q-70-28-165-17-126 8-187 81-57 76-26 155 38 91 163 101 115 14 213-27" stroke-width="3"/>
+ <!-- antimatter region, dashed -->
+ <path d="M458 168q72-30 168-16 122 9 184 82 56 75 27 153-37 91-160 103-117 14-217-27" stroke-width="3" stroke-dasharray="11 9"/>
+ <!-- border -->
+ <path d="M450 160l-9 28 17 27-18 30 19 29-18 31 17 29-18 30 18 29-17 30 9 26" stroke-width="2.4"/>
+ <!-- annihilation sparks -->
+ <path d="M450 238v-17m0 51v-17m-9-9h-17m51 0h-17m-20-12-11-11m34 34-11-11m0-12 11-11m-34 34 11-11" stroke-width="2"/>
+ <path d="M449 370v-13m0 39v-13m-7-7h-13m39 0h-13m-15-9-8-8m26 26-8-8m0-10 8-8m-26 26 8-8" stroke-width="1.8"/>
+ <!-- particles: plus in matter, minus in antimatter -->
+ <g stroke-width="2.3">
+  <circle cx="150" cy="268" r="17"/><path d="M142 268h16m-8-8v16"/>
+  <circle cx="325" cy="215" r="17"/><path d="M317 215h16m-8-8v16"/>
+  <circle cx="365" cy="318" r="13"/><path d="M359 318h12m-6-6v12"/>
+  <circle cx="132" cy="372" r="13"/><path d="M126 372h12m-6-6v12"/>
+  <circle cx="750" cy="268" r="17"/><path d="M742 268h16"/>
+  <circle cx="575" cy="215" r="17"/><path d="M567 215h16"/>
+  <circle cx="535" cy="318" r="13"/><path d="M529 318h12"/>
+  <circle cx="768" cy="372" r="13"/><path d="M762 372h12"/>
+ </g>
+ <!-- our galaxy -->
+ <path d="M247 330q-18-4-14-19 7-17 31-11 28 10 17 35-15 28-52 16-39-18-23-53 19-34 66-25" stroke-width="2.4"/>
+ <!-- a galaxy of antimatter, perhaps -->
+ <path d="M653 330q18-4 14-19-7-17-31-11-28 10-17 35 15 28 52 16 39-18 23-53-19-34-66-25" stroke-width="2.4" stroke-dasharray="7 7"/>
+ <!-- gamma rays travelling to a telescope -->
+ <path d="M434 397q-21-1-20 13t-17 14-18 15-17 14-18 14-16 16-17 13" stroke-width="2.2"/>
+ <path d="M326 503l2-19m-2 19 19-1" stroke-width="2.2"/>
+ <!-- telescope -->
+ <path d="M246 508l60-27 11 23-60 28zm-9 6 9-6 11 24-10 3m33-15-17 55m17-55 22 53m-22-53 1 57" stroke-width="2.6"/>
+</g>
+<g fill="#111" font-family="Georgia,serif" font-size="18" text-anchor="middle">
+ <text x="230" y="194">matter</text><text x="670" y="194">antimatter?</text>
+ <text x="238" y="401">we are here</text>
+ <text x="450" y="147" font-size="16">the border</text>
+ <text x="372" y="538" text-anchor="start">gamma rays: the glow we should see</text>
+ <text x="600" y="590" font-size="16">a possible answer, and the evidence it has to face</text>
+</g>
+</svg>
